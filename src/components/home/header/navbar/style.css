@@ -1,0 +1,40 @@
+@import 'src/index.css';
+.container{
+    margin-top: 10px;
+    padding: 0 0 0 20px;
+}
+main{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+  cursor: pointer;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 0.2em #61dafbaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.txt_logo{
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    line-height: 2.1;
+}
+.txt_second{
+    font-size: 35px;
+    color: var(--second-txt);
+}
+.navbar .links{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+

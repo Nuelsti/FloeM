@@ -1,0 +1,83 @@
+:root {
+  /* google font */
+  --font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --second-font: 
+  
+/* color */
+  --scheme: light dark;
+  --txt: hsl(0, 0%, 100%);
+  --hover: hsl(0, 11%, 96%);
+  --bg-color: hsl(0, 0%, 14%);
+  --card-color:hsl(237, 100%, 70%);
+  --second-txt:hsl(237, 100%, 70%);
+  --second-card-color:hsl(120, 67%, 29%);
+
+ 
+}
+
+a {
+  font-weight: 500;
+  color: var(--txt);
+  text-decoration: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--hover);
+
+}
+
+body {
+  /* background-color: var(--bg-color);  */
+  background-image: linear-gradient(to right, #1e0e71, #4a044e);
+  /* background-image: linear-gradient(to right, #1e0e71, #4a044e, ); */
+  /* background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%); */
+  color: var(--txt);
+  font-family: var(--font); 
+}
+
+h1 {
+  font-size: 5em;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: var(--txt);
+  font-family: var(--font);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--card-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--hover);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: hsla(0, 0%, 100%, 0.87);
+    --txt: hsl(0, 0%, 14%);
+    --card-color:hsl(120, 85%, 41%);
+    --second-txt:hsl(237, 100%, 70%);
+  }
+  body{
+    background-color: var(--bg-color);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: var(--txt);
+  }
+}
